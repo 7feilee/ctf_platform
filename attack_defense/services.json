@@ -1,0 +1,99 @@
+{
+	"app_title" : "USCGA Scripting CTF",
+
+	"app_navigation_logged_out": {		
+		"About": "/about",
+		"Scoreboard": "/scoreboard",
+		"Login": "/login",
+		"Register": "/register" },
+
+	"app_navigation_logged_in": {
+
+		"Submit a Flag": "/challenges",
+		"About": "/about",
+		"Scoreboard": "/scoreboard",
+		"Log Out": "/logout"
+	},
+
+	"app_about": "<p>
+			This CTF competition is all about automating a tool to do things  
+			for you;hopefully with it you will learn a lot more  
+			<a href='https://www.python.org/'>Python</a>, and feel a bit  
+			more powerful when you see how much scripting can really 
+			do for you. 
+		</p>
+		<p> 
+			The flags will change every minute, so your goal is to write some 
+			code that will retrieve the flag from a service and submit it for 
+			you, so there is no intervention by you as the user at all. 
+		</p> 
+		<p>
+			There are some serious modules I recommend to help you do this.  
+			This CTF is meant to be used as a way of learning, so please,   
+			don't be afraid to ask around how to do this kind of stuff -- in  
+			fact, that's what we want. 
+		</p>
+		<h2>Good luck and have fun!</h2>
+	",
+
+	"services": [
+		{ 
+			"title": "Flagger",
+			"folder_name": "flagger",
+			"description": "
+				Wow! This service just gives away a flag! What could be any easier than that?
+			",
+			"port": 5000,
+			"points" : 10
+		},
+		{ 
+			"title": "D-CODE",
+			"folder_name": "d-code",
+			"description": "
+				This service is really nice, too! It gives you the flag... but it's in some weird
+				jumbled text!
+			",
+			"port": 5005,
+			"points" : 15
+		},
+		{ 
+			"title": "ByteBot",
+			"folder_name": "bytebot",
+			"description": "
+				Meet ByteBot! He'll give you a flag... byte by byte! Can you build the flag with his help?
+			",
+			"port": 5010,
+			"points" : 15
+		},
+		{ 
+			"title": "BitBot",
+			"folder_name": "bit_bot",
+			"description": "
+				It's ByteBot's older brother, BitBot! He's a lot like his brother, 
+				just not as clear...
+			",
+			"port": 5025,
+			"points" : 40
+		},
+		{ 
+			"title": "LampChamp 0",
+			"folder_name": "lampchamp0",
+			"description": "
+				You've got to be the very best! Can you turn on all the lamps? It's not a hard thing to do!
+			",
+			"port": 5015,
+			"points" : 30
+		},
+		{ 
+			"title": "Balloon Saloon",
+			"folder_name": "balloon_saloon",
+			"description": "
+				It's a saloon... with a balloon! Not really. 
+				But try and hit the target to get a flag!
+			",
+			"port": 5020,
+			"points" : 40
+		}
+		
+	]
+}

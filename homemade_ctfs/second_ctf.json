@@ -1,0 +1,197 @@
+{
+	"app_title" : "USCGA Cyber Team CTF",
+
+	"app_navigation_logged_out": {		
+		"About": "/about",
+		"Scoreboard": "/scoreboard",
+		"Login": "/login",
+		"Register": "/register" },
+
+	"app_navigation_logged_in": {
+
+		"Challenges": "/challenges",
+		"About": "/about",
+		"Scoreboard": "/scoreboard",
+		"Log Out": "/logout"
+	},
+
+	"app_about": "<p>
+			This is the first practice <b>CTF</b> for the 2016-2017 iteration of the <a href='http://uscga.edu'>United States Coast Guard Academy</a> Cyber Team!
+		</p>
+		<p>
+			It is designed to (hopefully) introduce you to tools you may not have used before, (or at least get you more acquainted with them) but either way you should know of them and have in your toolkit. Obviously if you have any questions or need help, feel free to ask around -- but keep in mind there is a competitive scoreboard, so ensure you remain at the top!
+		</p>
+<p style='color:darkred;font-weight:bold'> Note that almost all of the tools you may need to solve these challenges are referenced in the <i>Tools</i> list in our BitBucket repository. If you are stuck, I recommend perusing through that...and certainly feel free to ask for help; that is what we are here for.
+</p>
+		<h2>Good luck and have fun!</h2>
+	",
+
+	"challenges": [
+
+		{ 
+			"title": "Getting Started!",
+
+			"prompt": "
+				<p title='In each paragraph, there may be more clues!'> This first 'challenge' is just to demonstrate how to enter a flag. </p>
+				<p style='font-weight:bold' title='The flag is: USCGA{never_be_ashamed_of_hints}'> On <i>some</i> challenges, <span style='color:darkred'>you can find hints by hovering over some of the text</span> in the description! </p>
+			",
+
+			"possible_answers": [ "USCGA{never_be_ashamed_of_hints}" ],
+			"downloadable_files": [],
+			"points" : 25
+		},
+		{ 
+
+			"title": "Orchestra",
+
+			"prompt": "
+				<p title='How can we avoid all the data that we cannot read?'> It is music to my ears.</p>
+			",
+
+			"possible_answers": [ "USCGA{there_is_no_orchestra_without_the_strings}" ],
+			"downloadable_files": ["second/orchestra"],
+			"points" : 75
+		},
+		{ 
+
+			"title": "Bae's Base",
+
+			"prompt": "
+
+				<p title='Have you ever heard of exiftool?'>Shiba Inu is so cute! Maybe he has something to say...</p>
+			",
+
+			"possible_answers": [ "USCGA{the_best_base_is_the_base64}" ],
+			"downloadable_files": ["second/woof64.jpg"],
+			"points" : 75
+		},
+		{ 
+
+			"title": "Web Hunt",
+
+			"prompt": "
+
+				<p title='grep can be an extremely powerful weapon if you know how to wield the sword.'>It's a website scavenger hunt!</p>
+			",
+
+			"possible_answers": [ "USCGA{grep_can_find_anything_if_you_know_what_to_look_for}" ],
+			"downloadable_files": ["second/nothinginthebox.zip"],
+			"points" : 100
+		},
+
+		{ 
+			"title": "UPX",
+
+			"prompt": "
+
+				<p title='This isn't the UPS delivery service... it is something else.'>I checked the mailbox, and found this!</p>
+			",
+
+			"possible_answers": [ "USCGA{packing_an_executable_can_hide_some_data}" ],
+			"downloadable_files": ["second/delivery"],
+			"points" : 100
+		},
+		{ 
+			"title": "The Assumption Song",
+
+			"prompt": "
+
+				<p title='I do not hear any music. Is it really?'> Check out my cool new song! </p>
+			",
+
+			"possible_answers": [ "USCGA{not_everything_is_what_it_seems}" ],
+			"downloadable_files": ["second/the_assumption_song.rar"],
+			"points" : 100
+		},
+		{ 
+
+			"title": "A Brisk Stroll",
+
+			"prompt": "
+
+				<p> Have you seen this image before? </p>
+			",
+
+			"possible_answers": [ "USCGA{binwalk_is_a_good_tool_to_know}" ],
+			"downloadable_files": ["second/a_walk_with_the_numbers.png"],
+			"points" : 100
+		},
+				{ 
+
+			"title": "Ex Or?",
+
+			"prompt": "
+
+				<p title='Trey has some incredible tools in the Cyber Team repository...'>It' looks like someone has encrypted this with the flag!</p>
+			",
+
+			"possible_answers": [ "USCGA{Cyber_is_your_everlasting_plight}" ],
+			"downloadable_files": ["second/xor.txt"],
+			"points" : 100
+		},
+			{ 
+
+			"title": "I lost my password!",
+
+			"prompt": "
+
+				<p title='You should be able to RIP this challenge apart.'>
+				Oh no! Can you please help me retrieve my password?
+				</p>
+
+				<small> Note that the submission for this is not in the usual flag format; it is simply the password. </small>
+			",
+
+			"possible_answers": [ "whiterose" ],
+			"downloadable_files": ["second/hashes.txt"],
+			"points" : 100
+		},
+		{ 
+
+			"title": "Capture the Flag",
+
+			"prompt": "
+
+				<p title='Is there a command-line tool to download a YouTube video? How can you examine it more closely?'>
+
+				Check out my new <a href='https://www.youtube.com/watch?v=U2FQTxWzAYI&feature=youtu.be'>YouTube video</a>!
+				</p>
+			",
+
+			"possible_answers": [ "USCGA{flags_in_frames_forever}" ],
+			"downloadable_files": [],
+			"points" : 100
+		},
+		{ 
+
+			"title": "RSA Money",
+
+			"prompt": "
+
+				<p title='What do those variables mean?'>
+
+				Someone was having fun with RSA... but they did a terrible job.
+				</p>
+			",
+
+			"possible_answers": [ "USCGA{R-S-A_is_F-U-N!_Go_Bears!!!}" ],
+			"downloadable_files": ["second/RSA.txt"],
+			"points" : 100
+		},
+
+		{ 
+
+			"title": "Such Base, Very Wow",
+
+			"prompt": "
+
+				Doge is back again! But wait... there's more!
+			",
+
+			"possible_answers": [ "USCGA{base64_squared_could_still_be_base64}" ],
+			"downloadable_files": ["second/woof64^10.jpg"],
+			"points" : 150
+		}
+		
+	]
+}

@@ -1,0 +1,221 @@
+{
+	"app_title" : "USCGA Cyber Team CTF",
+
+	"app_navigation_logged_out": {		
+		"About": "/about",
+		"Scoreboard": "/scoreboard",
+		"Login": "/login",
+		"Register": "/register" },
+
+	"app_navigation_logged_in": {
+
+		"Challenges": "/challenges",
+		"About": "/about",
+		"Scoreboard": "/scoreboard",
+		"Log Out": "/logout"
+	},
+
+	"app_about": "<p>
+			This is the first practice <b>CTF</b> for the <a href='http://uscga.edu'>USCGA</a> Cyber Team!
+		</p>
+		<p>
+			It is designed to introduce you to tools you may not have used before, but should know of and have in your arsenal. Obviously if you have any questions or need help, feel free to ask around -- but keep in mind there is a competitive scoreboard, so ensure you remain at the top!
+		</p>
+<p style='color:darkred;font-weight:bold'> Note that almost all of the tools you may need to solve these challenges (with the exception of the very last two) are referenced in the <i>Tools</i> list in our BitBucket repository. If you are stuck, I recommend perusing through that...and certainly feel free to ask for help; that is what we are here for.
+</p>
+		<h2>Good luck and have fun!</h2>
+	",
+
+	"challenges": [
+
+		{ 
+			"title": "Getting Started!",
+
+			"prompt": "
+				<p title='In each paragraph, there may be more clues!'> This first 'challenge' is just to demonstrate how to enter a flag. </p>
+				<p style='font-weight:bold' title='The flag is: flag{dont_be_ashamed_of_hints}'> On <i>some</i> challenges, you can find hints by hovering over some of the text in the description! </p>
+			",
+
+			"possible_answers": [ "flag{dont_be_ashamed_of_hints}" ],
+			"downloadable_files": [],
+			"points" : 10
+		},
+		{ 
+
+			"title": "The lolteam",
+
+			"prompt": "
+				<p title='Have you heard of Wireshark?'> Our arch-nemesis and rival CTF team, <b>lolteam</b> got into our network. We've been monitoring their actions online ever since. Could they have entered their password somewhere...? </p>
+			",
+
+			"possible_answers": [ "flag{no,_lolteam_is_not_an_admin_account}" ],
+			"downloadable_files": ["first/lolteam.pcapng"],
+			"points" : 50
+		},
+		{ 
+
+			"title": "Can you read?",
+
+			"prompt": "
+
+				<p>The printers in Chase Hall never work that well.</p>
+				<p title='Look closely...'>We don't see anything valuable in this document... do you?</p>
+			",
+
+			"possible_answers": [ "aeneascipher" ],
+			"downloadable_files": ["first/page_11.png"],
+			"points" : 50
+		},
+		{ 
+
+			"title": "Don't ask Me!",
+
+			"prompt": "
+
+				<p title='Never be afraid to Google! And think outside the box; this is a trick question. ;)'>What is every bipartite polyhedral graph with three edges per vertex that has a Hamiltonian cycle called?</p>
+				<p><small> Three words! </small></p>
+			",
+
+			"possible_answers": [ "an unsolved problem" ],
+			"downloadable_files": [""],
+			"points" : 50
+		},
+		{ 
+			"title": "Flag is in the Eye of the Beholder",
+
+			"prompt": "
+
+				<p title='Do not forget the simple commands. :)'></p>
+			",
+
+			"possible_answers": [ "Pwnium{361a8212dda49824b8fdb70ce48f2f60}" ],
+			"downloadable_files": ["first/looks_can_be_deceiving.rar"],
+			"points" : 100
+		},
+		{ 
+			"title": "Captured Packets",
+
+			"prompt": "
+
+				<p title='Can you get certain objects out of packet captures?'>We were looking at the network traffic here in Mac Hall and found some suspicious activity. It looks like they have been exchanging <b>lots</b> of important data. Can you figure out what it is?</p>
+			",
+
+			"possible_answers": [ "{pcap_fun!??}" ],
+			"downloadable_files": ["first/captured_packets.pcapng"],
+			"points" : 100
+		},
+		{ 
+
+			"title": "Have you heard of Steganography?",
+
+			"prompt": "
+
+				<p title='There is a certain jar that might be able to help you. Check out the tools in our repository!'>This castle looks like it is hiding something...</p>
+			",
+
+			"possible_answers": [ "MMA{raw_cr3am_pasta!}" ],
+			"downloadable_files": ["first/nagoya_castle.png"],
+			"points" : 100
+		},
+			{ 
+
+			"title": "Stronger than Caesar",
+
+			"prompt": "
+
+				<p title='Are there any tools to help with encryption in our repository?'>XMVZGC RGC AMG RVMG HGFGMQYCD VT VWM BYNO, NSVWDS NSGO RAO XG UWFN AF
+				HACDGMVWF. AIRVFN AII AMG JVRRVC-XVMC, FYRBIG TVIZ ESV SAH CGQGM XGGC
+				RVMG NSAC A RYIG TMVR NSG SVWFG ESGMG NSGO EGMG XVMC WCNYI NSG HAO
+				FVRG IVMH JARG MVWCH NV NAZG NSGR VTT NV EAM. OVWM TIAD YF 
+				'CV NSYF YF CVN JMOBNV RO HGAM', YC IVEGMJAFG, EYNS WCHGMFJVMGF YCFNGAH VT FBAJGF, FWMMVWCHGH XO NSG WFWAI 'TIAD' NAD ACH JWMIO XMAJGF. GCUVO.</p>
+			",
+
+			"possible_answers": [ "flag{no_this_is_not_crypto_my_dear}" ],
+			"downloadable_files": [],
+			"points" : 100
+		},
+		{ 
+
+			"title": "qwerty",
+
+			"prompt": "
+
+				<p title='Think outside the box... literally. ;)'>43wdxz 4edcvgt5 65rdcvb 6tfcgh8uhb 9ijn</p>
+			",
+
+			"possible_answers": [ "sochi" ],
+			"downloadable_files": [],
+			"points" : 150
+		},
+		{ 
+
+			"title": "Altered C Code",
+
+			"prompt": "
+
+				<p title='Not all whitespace is created equal.'>Our spies got spotted in Japan, but before our adversaries caught them they sent us this file. Get the secret code.</p>
+
+				<p title='In Sublime Text, you can select things to see the whitespace characters!'><small>Do you know how to compile C code? It might be worthwhile to look at this code in Sublime Text.</small></p>
+			",
+
+			"possible_answers": [ "D0nT_e4t_Sushi" ],
+			"downloadable_files": ["first/easier_than_you_think.c"],
+			"points" : 150
+		},
+		{ 
+
+			"title": "Execute this Image",
+
+			"prompt": "
+
+				<p title='You may have to do some forensics here...'>Is there anything <u>in this picture</u> that can be run?</p>
+			",
+
+			"possible_answers": [ "aw3s0me_flag" ],
+			"downloadable_files": ["first/i_will_drink_to_that.jpeg"],
+			"points" : 200
+		},
+		{ 
+
+			"title": "The Ripper",
+
+			"prompt": "
+
+				<p>John is pretty good at cracking passwords!</p>
+				<p>Could either you or him crack this ZIP file?</p>
+			",
+
+			"possible_answers": [ "flag{ev3n::y0u::bru7us?!}" ],
+			"downloadable_files": ["first/super_secure.zip"],
+			"points" : 250
+		},
+		{ 
+
+			"title": "Eight Cats",
+
+			"prompt": "
+
+				<p><a href='https://github.com/karthiksenthil/Learn-Git'>Have you learned git yet?</a></p>
+				<p>What emoticon comes with <b>flag</b>?</b></p>
+			",
+
+			"possible_answers": [ ":O" ],
+			"downloadable_files": [],
+			"points" : 350
+		},
+		{ 
+
+			"title": "Filled with ReMorse",
+
+			"prompt": "
+
+				<p>How are you supposed to hack a PDF file?</p>
+			",
+
+			"possible_answers": [ "1NV151BL3M3554G3" ],
+			"downloadable_files": ["first/lots_of_stego.pdf"],
+			"points" : 350
+		}
+				
+	]
+}

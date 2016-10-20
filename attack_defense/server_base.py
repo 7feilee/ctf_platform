@@ -342,4 +342,4 @@ def session_logout():
  
 if ( __name__ == "__main__" ):
 	context = (CERTIFICATE, PRIVATE_KEY)
-	app.run( host="0.0.0.0", debug=False, ssl_context=context, port = 444 )
+	app.run( host="0.0.0.0", debug=False, ssl_context=context, port = 444, threaded=True )

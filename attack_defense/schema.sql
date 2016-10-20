@@ -6,5 +6,5 @@ create table users (
   solved_challenges text not null,
   score integer not null,
   last_submission integer not null,
-  uuid text not null,
+  uuid text not null
 );
